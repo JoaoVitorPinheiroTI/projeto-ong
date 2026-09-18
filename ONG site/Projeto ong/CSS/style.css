@@ -1,0 +1,110 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial ;
+    background-color: rgb(250, 255, 242);
+    font-size: 16px;;
+}
+:root {
+  --gutter: 1rem;
+  --margin: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (min-width: 1024px) {
+  .sidebar  { grid-column: span 3; }
+  .conteudo { grid-column: span 9; }
+}
+} 
+.M {
+   gap: 1rem;
+    background-color: rgb(223, 233, 206);
+}
+.logo{
+    
+    width:70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#DadosPessoais{
+    item-align: center;
+
+}
+
+#ong{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+.conteiner{
+  
+}
+footer{
+    background-color: rgb(223, 233, 206);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+
+h1{
+    color: rgb(62, 75, 29);
+    text-align: center;
+    align-items: center;
+}
+header{
+  
+    width:100%;
+   display: flex;
+   align-items: center;
+
+}
+.Logo{ 
+    width: 100%;
+    text-align: center;
+    background-color: rgb(223, 233, 206);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+
+}
+
+
+
+.menu{
+    margin: 1px;
+    border: solid 1px;
+    border-color: rgb(128, 119, 3);
+    white-space: nowrap;
+    line-height: 30px;
+    
+    background-color: rgb(128, 119, 3);
+    display: flex;
+    gap: 2rem;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
